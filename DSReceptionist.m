@@ -1,6 +1,9 @@
 //  DSReceptionist.m
 //  Copyright (c) 2009 Decimus Software, Inc. All rights reserved.
 //
+//  The latest version of this source may be found at:
+//     http://github.com/bdrister/DSReceptionist
+//
 //  Redistribution and use in source and binary forms, with or without modification,
 //  is permitted provided that the following conditions are met:
 //     - Redistributions of source code must retain the above copyright notice,
