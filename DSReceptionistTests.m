@@ -25,7 +25,7 @@
 //  OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-#import "ReceptionistTests.h"
+#import "DSReceptionistTests.h"
 
 #import "DSReceptionist.h"
 
