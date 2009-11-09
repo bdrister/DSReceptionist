@@ -1,0 +1,17 @@
+*** What is this? ***
+DSReceptionist is a blocks-based implementation of the receptionist pattern for KVO. It also includes support for KVO and dependent keys across arrays.
+
+
+*** KVO across arrays? ***
+KVO doesn't work across to-many relationships; it throws an exception. This is annoying, and unfortunate given that -valueForKeyPath: *does* work across to-many relationships. DSReceptionist works the annoying magic to let KVO work like you're observing that -valueForKeyPath: value.
+
+Yes, it's quite a nuisance to do (especially generically like this!), but now that it's been done here, you don't have to manually implement it yourself anymore. The only known caveats at the moment are:
+
+- Only one level of arrays are supported; you'll give DSReceptionist the key path to the array from the object, and the key path from the array elements to the values you're interested in.
+- When the value of one of the array elements' key paths changes, it appears as a replacement in the array, but DSReceptionist doesn't provide the changed indexes.
+
+Neither of these are impossible to do, we just have never needed that functionality, and we'd guess you probably won't either. If you do, feel free to add it!
+
+
+*** How do I use it? ***
+Just add DSReceptionist.* to your project. Consult DSReceptionist.h for the API. Mac OS X 10.6 "Snow Leopard" and garbage collection are required.
